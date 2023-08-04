@@ -1,0 +1,60 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://assets.ccbp.in/frontend/react-js/social-buttons-bg.png");
+  background-size: cover;
+}
+
+.heading {
+  font-size: 20px;
+  font-family: "Bree Serif";
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.buttons-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  min-height: 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: 500;
+}
+.like-button {
+  background-color: #eab308;
+}
+.comment-button {
+  background-color: #ffffff;
+}
+.share-button {
+  background-color: #1d4ed8;
+}
+@media screen and (min-width: 768px) {
+  .buttons-card {
+    flex-direction: row;
+  }
+  .heading {
+    flex-direction: row;
+  }
+}
